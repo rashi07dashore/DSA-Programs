@@ -1,0 +1,50 @@
+I HAVE TO COVER ALL THESE QUESTIONS
+
+1. **Reverse a Linked List:**
+   - Reverse a singly linked list.
+   - Reverse a linked list in groups of a given size.
+
+2. **Detect a Cycle:**
+   - Detect if a linked list has a cycle.
+   - Find the start of the cycle in a linked list.
+
+3. **Find the Middle of a Linked List:**
+   - Find the middle element of a linked list in one pass.
+
+4. **Merge Two Sorted Linked Lists:**
+   - Merge two sorted linked lists into one sorted list.
+   - Merge K sorted linked lists.
+
+5. **Remove Duplicates:**
+   - Remove duplicates from an unsorted linked list.
+   - Remove duplicates from a sorted linked list.
+
+6. **Intersection Point in Y Shaped Linked Lists:**
+   - Find the node where two linked lists intersect.
+
+7. **Add Two Numbers Represented by Linked Lists:**
+   - Add two numbers represented by linked lists (digits stored in reverse order).
+
+8. **Flatten a Multilevel Doubly Linked List:**
+   - Flatten a multilevel doubly linked list.
+
+9. **Clone a Linked List with Random Pointers:**
+   - Clone a linked list with next and random pointers.
+
+10. **Rotate a Linked List:**
+    - Rotate a linked list by K nodes.
+
+11. **Palindromic Linked List:**
+    - Check if a linked list is a palindrome.
+
+12. **LRU Cache using Linked List:**
+    - Implement an LRU (Least Recently Used) cache using a linked list.
+
+13. **Intersection of Two Linked Lists:**
+    - Find the intersection point of two linked lists.
+
+14. **Nth Node from the End:**
+    - Find the Nth node from the end of a linked list.
+
+15. **Delete a Node in the Middle of a Linked List:**
+    - Delete a node in the middle of a linked list, given only access to that node.

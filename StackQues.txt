@@ -1,0 +1,40 @@
+STACK QUESTIONS THAT I HAVE TO MASTER
+
+Beginner:
+1. **Implement a Stack using Arrays:**
+   - Write code to implement a basic stack using an array.
+
+2. **Balanced Parentheses:**
+   - Check whether a given expression has balanced parentheses using a stack.
+
+3. **Evaluate Postfix Expression:**
+   - Implement a stack to evaluate a postfix expression.
+
+Intermediate:
+4. **Next Greater Element:**
+   - Given an array, find the next greater element to the right for each element using a stack.
+
+5. **Implement a Queue using Stacks:**
+   - Design a queue using two stacks.
+
+6. **Sort a Stack:**
+   - Sort a stack using only push and pop operations.
+
+Advanced:
+7. **Design a Min Stack:**
+   - Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+8. **Expression Evaluation:**
+   - Evaluate an arithmetic expression with operators and parentheses using a stack.
+
+9. **Implement a Max Stack:**
+   - Design a stack that supports push, pop, top, and retrieving the maximum element in constant time.
+
+10. **Expression Conversion:**
+    - Convert an infix expression to postfix or prefix using a stack.
+
+11. **Stock Span Problem:**
+    - Given an array representing stock prices on different days, calculate the stock span for each day using a stack.
+
+12. **Evaluate Expression Tree:**
+    - Evaluate the value of an expression tree representing a mathematical expression.
