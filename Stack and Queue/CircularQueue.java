@@ -16,7 +16,7 @@ class CustomQueue
        return size == data.length; //size will determine the fullness of circular queue
     }
     private boolean isEmpty(){
-        return end == 0;  //end is at initial position 
+        return end==0;  //end is at initial position 
         //Queue is empty condition
     }
     public boolean insert(int item)
@@ -42,7 +42,11 @@ class CustomQueue
     }
     public void display(){
         if(isEmpty())
-        return;
+        {
+            System.out.println("\nQueue is empty");
+            return;
+        }
+      
         System.out.println("\ndisplaying data");
         int i= front;
         do{
@@ -85,5 +89,12 @@ public class CircularQueue {
     queue.display();
     queue.displayFront_Rear();
     queue.displayFront();
+    System.out.println("\nRemoved item: "+queue.remove());
+    System.out.println("\nRemoved item: "+queue.remove());
+    System.out.println("\nRemoved item: "+queue.remove());
+    queue.display();
+    System.out.println("\nRemoved item: "+queue.remove());
+    queue.display();
+    
     }
 }
