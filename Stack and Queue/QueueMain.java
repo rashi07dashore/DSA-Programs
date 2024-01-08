@@ -45,11 +45,12 @@ class CustomQueue
     public void display(){
         if(isEmpty())
         return;
-        System.out.println("displaying data");
+        System.out.println("\ndisplaying data");
         for(int i=0; i<end; i++)
         {
             System.out.print(data[i]+"->");
         }
+        System.out.print("END");
         return;
     }
     public void displayFront_Rear()
@@ -58,7 +59,7 @@ class CustomQueue
             System.out.println("Queue is empty, front and rear at same position");
             return;
         }
-        System.out.println("front is at index: 0 and rear(end) at index: "+end);
+        System.out.println("\nfront is at index: 0 and rear(end) at index: "+end);
         return;
     }
 }
@@ -70,7 +71,7 @@ public class QueueMain {
     queue.insert(53);
     queue.insert(31);
     queue.display();
-    System.out.println("Removed item: "+queue.remove());
+    System.out.println("\nRemoved item: "+queue.remove());
     queue.display();
     queue.insert(10);
     queue.display();
