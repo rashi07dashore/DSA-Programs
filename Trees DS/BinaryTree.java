@@ -86,7 +86,7 @@ public void prettyDisplay()
 
   public void preorder()
   {
-    System.out.println("Preorder Traversal of Tree: ");
+    System.out.println("\nPreorder Traversal of Tree(ROOT, LEFT, RIGHT): ");
     preorder(root);
   }
 
@@ -98,6 +98,30 @@ private void preorder(Node node) {
     preorder(node.left);
     preorder(node.right);
 }
+public void inorder()
+{
+  System.out.println("\nInorder Traversal of Tree(LEFT, ROOT, RIGHT): ");
+  inorder(root);
+}
+private void inorder(Node node) {
+ if(node== null)
+ return;
+ inorder(node.left);
+ System.out.print(node.data+" , ");
+ inorder(node.right);
+}
+public void postorder()
+{
+  System.out.println("\nPostorder Traversal of Tree(LEFT, RIGHT, ROOT): ");
+  postorder(root);
+}
+private void postorder(Node node) {
+ if(node== null)
+ return;
+ postorder(node.left);
+ postorder(node.right);
+ System.out.print(node.data+" , ");
+}
 
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -106,5 +130,7 @@ public static void main(String[] args) {
     // tree.display();
     tree.prettyDisplay();
     tree.preorder();
+    tree.inorder();
+    tree.postorder();
   }
 }
