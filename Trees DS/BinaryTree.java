@@ -60,12 +60,51 @@ private void display(Node node, String indent) {
 }
 public void prettyDisplay()
 {
-    
+    System.out.println("Pretty display");
+    prettyDisplay(root, 0);  //0 is the level of root node
 }
-  public static void main(String[] args) {
+  private void prettyDisplay(Node node, int level) 
+  {
+    if(node== null)
+    return;
+
+    prettyDisplay(node.right , level+1);      //increase a level if right exists
+    if(level!= 0)
+    {
+        //to add spaces according to levels
+        for(int i=0; i<level-1 ; i++)
+        {
+            System.out.print("|\t\t");
+        }
+        System.out.println("|---------->" +node.data);
+    }
+    else{
+        System.out.println(node.data);
+    }
+    prettyDisplay(node.left, level+1);
+  }
+
+  public void preorder()
+  {
+    System.out.println("Preorder Traversal of Tree: ");
+    preorder(root);
+  }
+
+private void preorder(Node node) {
+    if(node == null)
+    return;
+
+    System.out.print(node.data+",");
+    preorder(node.left);
+    preorder(node.right);
+}
+
+public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     BinaryTree tree = new BinaryTree();
     tree.populate(sc);
-    tree.display();
+    // tree.display();
+    tree.prettyDisplay();
+    tree.preorder();
   }
 }
