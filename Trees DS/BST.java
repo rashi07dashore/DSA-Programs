@@ -21,6 +21,7 @@ public class BST {
     private Node root;
     public BST()
     {
+        //constructor
     }
     public int height(Node node)
     {
