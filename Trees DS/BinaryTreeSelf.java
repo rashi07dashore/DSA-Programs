@@ -107,20 +107,46 @@ public class BinaryTreeSelf {
     preorder(node.left);
     preorder(node.right);
    }
-   public static void main(String[] args) {
+
+   //counting the leaf nodes of a binary tree
+   int count=0;
+    int countLeaves(Node node) 
+    {
+         // Your code 
+         countLeaf(node);
+         return count;
+    }
+    void countLeaf(Node node)
+    {
+        if(node == null)
+        {
+            return;
+        }
+        if(node.left== null && node.right==null)
+        {
+            count++;
+            return;
+        }
+        countLeaf(node.left);
+        countLeaf(node.right);
+    }
+
+public static void main(String[] args) {
     BinaryTreeSelf tree = new BinaryTreeSelf();
     Node root = null;
     
     //creating a tree
-   //root= tree.buildTree(root);
+   root= tree.buildTree(root);
 
    //creating a tree with its level order traversal
-   tree.buildFromLevelOrder(root);
+   //tree.buildFromLevelOrder(root);
 
     //level order traversal(Breadth first)
     System.out.println("Level oder Traversal of Tree: ");
     tree.levelOrderTraversal(root);
     System.out.println("preorder traversal: ");
     tree.preorder(root);
+
+    System.out.println("Number of leaf nodes in tree are: "+tree.countLeaves(root));
    }
 }
