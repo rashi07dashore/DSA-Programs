@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//GFG Question
 class Solution
 {
     boolean isLeaf(Node node) 
