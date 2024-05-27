@@ -38,5 +38,6 @@ public class BinarySearchRecurssion {
         else{
             System.out.println("not found");
         }
+
     }
 }
